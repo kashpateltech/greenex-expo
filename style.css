@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Ubuntu:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Play', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1b1c1b;
+    background-image: url(./img/bg/vertical_cloth.png);
+}
+
+
+/* Navigation bar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 12vh;
+    /* background-color: rgb(70, 43, 43); */
+    background-color: transparent;
+    position: fixed;
+    top:0%;
+    width: 100%;   
+    z-index: 10;
+    padding-top:20px;
+    padding-bottom: 10px;
+}
+
+.logo{
+    color: rgb(236, 206, 104);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size:smaller;
+    margin-left: 2rem;
+    opacity: 0;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width:40%;
+    margin-right: 2rem;
+}
+
+
+.nav-links li{
+    list-style: none;
+    /* background-color: red; */
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: rgb(236, 206, 104);
+    letter-spacing: 2px;
+    font-weight:400;
+    font-size: 18px;
+    /* background-color: goldenrod; */
+    padding:6px 10px;
+}
+
+.nav-links a:hover{
+    background-color: goldenrod;
+    color:white;
+    transition-duration: 0.3s;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.burger{
+    display: none;
+}
+
+/* Section 1 */
+
+.section1{
+    height: 100vh;
+    background-image: url(./img/bg/dubai2.jpg);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.section1 div{
+    margin-top: 0;
+    height: 30vh;
+    align-content: center;
+    justify-content: center;
+    padding-top:8rem;
+    margin-left: 0.2rem;
+}
+.hero_text{
+    color: white;
+    background: rgba(43, 41, 33, 0.4);
+    padding: 3rem 2rem!important;
+    border-left: 14px solid rgb(212, 164, 5);
+}
+
+.hero_text h1{
+    font-size: 4rem;
+    font-weight: bolder;
+    letter-spacing: 8px;
+}
+
+.hero_text p{
+    font-size: 2rem;
+    letter-spacing: 6px;
+}
+/* .section2, .section3{
+    padding: 5rem;
+    margin: 4rem auto;
+    padding:10px;
+    width:  100%;
+} */
+
+.carousel-inner{
+    width: 60%;
+    max-height: 600px;
+}
+
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    opacity: 0.6;
+    width: 1.4rem!important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+
+.venue_intro{
+    color: white;
+    width: 100%;
+    font-size: 1.1rem;
+    line-height: 40px;
+    text-align: center!important;
+    justify-content: center;
+}
+
+.venue_intro p{
+    width:60%;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    padding: 1rem;
+    font-weight: lighter;
+    /* background-color: red; */
+    margin-left:50%;
+    transform: translateX(-50%);
+}
+
+.speaker_div{
+    width: 100%;
+    /* background-repeat: repeat;
+    background-size: 100% 100%; */
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    background-image: url(./img/bg/webb-dark.png);
+}
+
+.speakers_intro{
+    padding-top:0;
+    padding-bottom: 2rem;
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+    margin: 0!important;
+    text-align: center;
+}
+
+.speakers_intro p{
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+}
+
+.speakers_intro h3{
+    width: 90%;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    letter-spacing: 3px;
+    color: goldenrod;
+    /* background-color:rgba(190, 190, 180, 0.2); */
+    width: 40%;
+    text-align: center;
+    font-weight: bold;
+    margin-left:50%;
+    transform:translateX(-50%);
+    /* background-color: rgb(240, 240, 231); */
+    border:solid 2px rgb(240, 240, 231);
+}
+
+.col img{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid 2px goldenrod;
+}
+
+
+.mission_statement{
+    width: 90%;
+    margin: 5rem auto;
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    gap: 5rem;
+    align-items: center;
+    background-color: rgb(240, 240, 231);
+    align-content: space-around;
+    justify-content: space-between;
+}
+
+.mission_statement img{
+    object-fit: fill !important;
+    width: 100%;
+}
+.mission{
+    justify-content: center;
+}
+.mission_image {
+    width: 100%;
+    padding: 0;
+}
+
+.mission h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    letter-spacing: 2px;
+    width: 70%;
+    background-color: goldenrod;
+}
+
+.mission blockquote{
+    font-size: 1.5rem;
+    width: 70%;
+    line-height: 50px;
+    letter-spacing: 2px;
+    padding-top: 1rem;
+    color: black;
+}
+.options{
+    margin:1rem auto;
+    padding: 1.5rem;
+    color: black;
+}
+
+#options_intro h3{
+    color: goldenrod;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    background-color:rgba(190, 190, 180, 0.2);
+    padding: 1rem;
+}
+
+.options .card-title{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    padding:1.5rem;
+    background:goldenrod;
+}
+
+.options .card{
+    background: #f3ce18;
+    background: -webkit-radial-gradient(top left, #f3d78b, #F1F2F4);
+    background: -moz-radial-gradient(top left, #a18706, #F1F2F4);
+    background: radial-gradient(to bottom right, #f0d23c, #F1F2F4);
+}
+
+.venue_section{
+    padding: 2rem;
+    padding-bottom: 5rem; 
+    background-image: url(./img/bg/webb-dark.png);
+}
+
+.venue_intro h3  {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: goldenrod;
+    padding:1.5rem;
+    background:rgba(211, 211, 190, 0.4);
+}
+
+footer{
+    padding: 2rem;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+footer h6{
+    color:gold ;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+}
+footer h5{
+    text-transform: uppercase;
+    color: white;
+}
+footer h3{
+    background-color: gold;
+    height: 0.2rem;
+    width: 3rem;
+    margin-top: 0.9rem;
+    margin-bottom: 1rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+footer p{
+    letter-spacing: 1px;
+    size: 1.8rem;
+    font-weight: lighter;
+}
+
+footer i{
+    padding:0.5rem;
+}
+
+footer i:hover{
+    color:goldenrod;
+}
+
+.vl{
+    color:white;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+
+/* Media Query */
+
+/* Desktop breaking points */
+@media screen and (max-width:1290px){
+    .nav-links{
+        width: 60%;
+        color: white;
+    }
+
+    .section1{
+        margin-top: 0;
+        padding-top: 3rem;
+    }
+    .section1 div{
+        height: 28vh;
+        justify-content: center;
+    }
+
+    .hero_text h1{
+        font-size: 2.5rem;
+    }
+
+    .hero_text p{
+        font-size: 1.6rem;
+    }
+
+    .mission_statement{
+        flex-direction: column;
+    }
+    .mission blockquote{
+        font-size: 1.1rem;
+        width: 100%;
+    }
+   
+    .mission h3{
+        font-size: 2rem;
+        padding:1rem;
+        width: 100%;
+    }
+
+    .col img{
+        width: 160px;
+        height: 160px;
+    }
+
+    .options .card-title{
+        font-size: 1.2rem;
+    }
+    
+}
+
+/* Tablet breaking points */
+@media screen and (max-width: 992px){
+    .nav-links{
+        width: 80%;
+    }
+    .nav-links a{
+        font-size: 1rem;
+    }
+    .section1{
+        margin-top: 0;
+        padding-top: 10rem;
+    }
+    .section1 div{
+        height: 26vh;
+        justify-content: center;
+        padding-top: 2.8rem!important;
+    }
+
+    .hero_text h1{
+        font-size: 3.9rem;
+    }
+
+    .mission_statement{
+        flex-direction: column;
+    }
+    .mission blockquote{
+        font-size: 1.1rem;
+        width: 100%;
+    }
+   
+    .mission h3{
+        font-size: 2rem;
+        padding:1rem;
+        width: 100%;
+    }
+
+    .col img{
+        width: 220px;
+        height: 220px;
+    }
+
+    .carousel-inner{
+        width: 90%;
+        max-height: 600px;
+    }
+
+    .venue_intro p{
+        width: 90%;
+        font-size: 1.1rem;
+        padding: 0.5rem;
+    }
+
+    .options .card-title{
+        font-size: 1.5rem;
+    }
+
+    .speakers_intro h3{
+        width: 90%;
+    }
+
+
+}
+
+
+/* landscape phones breaking points */
+@media screen and (max-width:767px){
+    body{
+        overflow-x:hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right:0;
+        margin:0;
+        height: 92vh;
+        top:9vh;
+        background-color: #1b1c1b;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 55%;
+        padding-top: 40px;
+        padding-bottom: 70px;
+        transform: translateX(100%);
+        transition:transform 0.5s ease-in;
+        
+    }
+    .nav-links li{
+        opacity:0;
+        padding-right:2rem;
+        margin: 0px;
+
+    }
+    
+    .nav-links a{
+        font-size: 14px;
+    }
+    .burger{
+        display:block;
+        cursor: pointer;
+        margin-right:1rem;
+    }
+
+    .nav-active{
+        transform: translateX(0%);
+    }
+
+ 
+
+    @keyframes navLinkFade {
+        from{
+            opacity:0;
+            transform:translateX(5px);
+
+        }
+        
+        to{
+            opacity:1;
+            transform:translateX(0px);
+        }
+    }
+
+    .toggle .line1{
+        transform:rotate(-45deg) translate(-5px,6px);
+
+    }
+
+    .toggle .line2{
+        opacity:0;
+        
+    }
+    .toggle .line3{
+        transform:rotate(45deg) translate(-5px,-6px);
+        
+    }
+
+    .mission_statement{
+        flex-direction: column;
+    }
+    .mission blockquote{
+        font-size: 1.1rem;
+        width: 100%;
+    }
+   
+    .mission h3{
+        font-size: 2rem;
+        padding:1rem;
+        width: 100%;
+    }
+
+
+    .col img{
+        width: 140px;
+        height: 140px;
+    }
+
+    .section1{
+        margin-top: 0;
+        padding-top: 3rem;
+
+    }
+    .section1 div{
+        height: 45vh;
+    }
+    .hero_text h1{
+        font-size: 3rem;
+        
+    }
+
+    .hero_text p{
+        font-size: 1.2rem;
+    }
+
+    .venue_intro p{
+        width: 100%;
+        font-size: 1.1rem;
+        padding: 0.5rem;
+    }
+
+    .mission h3{
+        font-size: 2rem;
+    }
+
+    .mission blockquote{
+        font-size: 1rem;
+    }
+
+    .mission_statement{
+        width: 100%;
+        margin: 1rem auto;
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+
+
+    .speakers_intro h3{
+        font-size: 2rem;
+        width: 90%;
+    }
+
+    .speakers_intro p{
+        font-size: 1.2rem;
+    }
+
+
+    .options .card-title{
+        font-size: 1.5rem;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev /*, .carousel-indicators */ {
+    opacity: 0.8;
+    width: 1.2rem!important;
+    }
+    
+
+
+}
+
+
+/* breaking point of small devices */
+@media screen and (max-width:576px){
+    .col img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .section1 div{
+        height: 30vh;
+        justify-content: center!important;
+        padding-top:2.5rem!important;
+        padding-bottom: 2.5rem!important;
+    }
+
+
+    .hero_text h1{
+        font-size: 1.8rem!important;
+        font-weight: bolder;
+        letter-spacing: 8px;
+    }
+
+    .options_intro h3{
+        font-size: 2rem !important;
+    }
+
+    .speakers_intro h3{
+        font-size: 2.2rem;
+    } 
+
+    .speakers_intro p{
+        font-size: 1.4rem;
+    } 
+    footer p{
+        font-size: 0.9rem;
+    }
+
+    footer h6{
+        font-size: 0.8rem;
+    }
+
+    .vl{
+        font-size: 1rem;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev /*, .carousel-indicators */ {
+    opacity: 1;
+    width: 1rem!important;
+    }
+    
+
+
+}
