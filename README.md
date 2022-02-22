@@ -29,7 +29,7 @@
 
 ## Screenshots
 
-Greenex-expo ![Screen Shot 2022-02-22 at 3 42 35 pm](https://user-images.githubusercontent.com/88652187/155064471-d812e9f3-9a67-4a57-be5e-5e49b20da389.png)
+Greenex-crypto !![Screen Shot 2022-02-22 at 5 09 43 pm](https://user-images.githubusercontent.com/88652187/155073153-6d699d43-a1f3-48bc-baac-84bd8103208e.png)
 
 ## Contact
 
