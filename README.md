@@ -13,7 +13,7 @@
 
 ## General Information
 
-- Easy to Navigate website. This was my first project as a freelancer.
+- Easy to Navigate website. This was my second project as a freelancer.
 
 
 ## Technologies Used
